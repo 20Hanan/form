@@ -1,0 +1,107 @@
+body {
+     background-image: linear-gradient(to top, #d8a4c5 0%, #8e5fcc 100%);
+     background-repeat: no-repeat;
+     height: 100vh;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     word-wrap: none;
+     
+ }
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(0, 0, 0);
+    background-clip: border-box;
+    border: none;
+    border-radius: 20px;
+}
+
+.img-b-r{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: auto;
+}
+.img-fluid{
+    height: 100%;
+}
+.card-body{
+    padding-bottom: 3rem;
+    position: relative;
+}
+.card-title{
+    padding: 2rem;
+    color: white;
+}
+.wrapper{
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    position: relative;
+    
+}
+.wrapper input{
+    border: none;
+    font-size: 16px ;
+    border-bottom: 1px solid silver;
+    background: none;
+    color: white;
+    width: 12rem;
+    
+    
+}
+.wrapper input:focus{
+    outline: none;
+    
+}
+.wrapper input:focus ~ label{
+    transform: translateY(-20px);
+    transition: 0.7s;
+}
+.wrapper label{
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    color: white;
+}
+
+.form-select {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    margin-left: 1.1rem;
+    width: 83%;
+    margin-bottom: 1.1rem;
+
+}
+.form-select:focus{
+    box-shadow: none;
+    
+}
+.form-select option{
+    color: black;
+}
+button{
+    border-radius: 30px;
+    background-color: rgb(80, 233, 93);
+    padding: 5px 20px ;
+    margin-left: 15px;
+    
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
