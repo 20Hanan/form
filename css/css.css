@@ -2,7 +2,7 @@
 body {
      background-image: linear-gradient(to top, #d8a4c5 0%, #8e5fcc 100%);
      background-repeat: no-repeat;
-     height: 100vh;
+     height: 100%;
      background-size: cover;
      display: flex;
      justify-content: center;
