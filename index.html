@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/css.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- main container section -->
+    <div class="col-xl-6 col-10 main-container">
+        <!-- left side div section -->
+        <div class="col-xl-6 hidden-sm left-side">
+            <img src="./img/image1.jpg" alt="img">
+        </div>
+        <!-- end of left side div section -->
+        <!-- right side div section start -->
+        <div class="col-12 col-xl-6 col-xs-12 right-side">
+            <!-- right side title -->
+            <h1>Registration info</h1>
+            <!-- name field section -->
+            <div class="container col-11">
+            <div class="wrapper" onclick="hideLabel('#name-label')">
+                <input type="text" required>
+                <label id="name-label" for="">Name</label>
+            </div>
+            <!-- date field section -->
+            <div class="wrapper">
+                <input id="t" type="text" onclick="hideElement('#date-label')" required>
+                <label id="date-label" for="">date</label>
+            </div>
+            <!-- gender field section -->
+            <div class="wrapper" onclick="hideLabel('#name-label')">
+                <select class="" name="" id="">
+                    <option value="1">gender</option>
+                    <option value="2">male</option>
+                    <option value="3">female</option>
+                </select>
+            </div>
+            <!-- email field section -->
+            <div class="wrapper" onclick="hideLabel('#email-label')">
+                <input type="email" required>
+                <label id="email-label" for="">Email</label>
+            </div>
+            <!-- phone field section -->
+            <div class="wrapper" onclick="hideLabel('#phone-label')">
+                <input type="text" required>
+                <label id="phone-label" for="">phone</label>
+            </div>
+            <!-- submit btn -->
+            <button><a href="#"> submit</a></button>
+        </div>
+    </div>
+        <!-- end of right side div -->
+    </div>
+    <!-- end of main container -->
+    <script>
+        // date field function
+        function hideElement(id) {
+            console.log(id)
+            document.querySelector(id).style.display = 'none';
+            document.querySelector('#t')['type'] = 'date';
+        }
+        // text fields function
+        function hideLabel(id) {
+            document.querySelector(id).style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

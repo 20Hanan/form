@@ -1,0 +1,162 @@
+/* body styling */
+body {
+     background-image: linear-gradient(to top, #d8a4c5 0%, #8e5fcc 100%);
+     background-repeat: no-repeat;
+     height: 100vh;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     word-wrap: none;
+     font-family: 'Zen Maru Gothic', sans-serif;
+     
+ }
+ /* main-container styling */
+ .main-container{
+    display: flex;
+    position: relative;
+    top: 10%;
+    height: 80vh;
+    
+ }
+ /* leftside styling */
+.left-side img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:30px ;
+    border-bottom-left-radius:30px ;
+
+}
+/* right-side div styling */
+.right-side{
+    background-color: black;
+    color: white;
+    padding: 4rem;
+    border-bottom-right-radius:30px ;
+    border-top-right-radius:30px ;
+
+}
+.right-side h1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+/* form styling */
+.wrapper{
+    
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    padding-bottom: 35px;
+    position: relative;
+    
+   
+    
+}
+.wrapper input{
+    border: none;
+    font-size: 16px ;
+    border-bottom: 1px solid silver;
+    background: none;
+    color: white;
+    width: 100%;
+    
+    
+}
+
+.wrapper input:focus{
+    outline: none;
+    
+}
+.wrapper input:focus ~ label{
+    transform: translateY(-20px);
+    transition: 0.7s;
+}
+.wrapper label{
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    color: white;
+}
+/* date field */
+.wrapper-date{
+    
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+   
+    
+}
+.wrapper-date input{
+    border: none;
+    font-size: 16px ;
+    border-bottom: 1px solid silver;
+    background: none;
+    color: white;
+    width: 12rem;
+    
+    
+}
+.wrapper-date input[type='date']{
+    display: none;
+}
+.wrapper-date input:focus{
+    outline: none;
+    
+}
+.wrapper-date input:focus ~ label{
+    transform: translateY(-20px);
+    transition: 0.7s;
+}
+.wrapper-date label{
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    color: white;
+}
+
+
+
+.wrapper select {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    
+
+}
+.wrapper select :focus{
+    box-shadow: none;
+    
+}
+.wrapper select  option{
+    color: black;
+}
+button{
+    border-radius: 30px;
+    background-color: rgb(80, 233, 93);
+    padding: 5px 20px ;
+    margin-left: 15px;
+    
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* media query */
+@media screen and (min-width: 320px) and (max-width: 1185px) { 
+    .right-side{
+   border-radius: 30px;
+
+}
+ }
