@@ -43,6 +43,8 @@ body {
     padding-bottom: 20px;
 }
 /* form styling */
+.container{
+position: relative;}
 .wrapper{
     
     background-color: rgba(0, 0, 0, 0);
