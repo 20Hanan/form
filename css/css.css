@@ -164,3 +164,9 @@ button a{
 
 }
  }
+@media screen and (min-height: 50) and (max-height: 1185px) { 
+    .container{
+   overflow: hidden;
+
+}
+ }
